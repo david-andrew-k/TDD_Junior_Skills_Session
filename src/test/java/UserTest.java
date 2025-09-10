@@ -11,8 +11,8 @@ public class UserTest {
 
     @Test
     void TestToStringReturnsCorrectFormat() {
-        User testUserObject = new User("davidandrew", "12345");
-        String expected = "Username: davidandrew\nPassword: 12345";
+        User testUserObject = new User("davidandrew", "Pass12345$");
+        String expected = "Username: davidandrew\nPassword: Pass12345$";
         String actual = testUserObject.toString();
         assertEquals(expected,actual);
     }
@@ -30,7 +30,7 @@ public class UserTest {
     void TestInvalidPasswordTooLongThrowsInvalidPasswordException(){
         User testUserObject = new User();
         Exception actual = assertThrows(InvalidPasswordException.class, () -> testUserObject.setPassword("Pa3$" + "a".repeat(17)));
-        String expectedMessage = "Password is too long!";
+        String expectedMessage = "Password must be no more than 20 characters long.";
         assertEquals(expectedMessage, actual.getMessage());
     }
 
@@ -38,7 +38,7 @@ public class UserTest {
     void TestInvalidPasswordTooShortThrowsInvalidPasswordException(){
         User testUserObject = new User();
         Exception actual = assertThrows(InvalidPasswordException.class, () -> testUserObject.setPassword("Pa3$"));
-        String expectedMessage = "Password is too short!";
+        String expectedMessage = "Password must be at least 5 characters long.";
         assertEquals(expectedMessage, actual.getMessage());
     }
     
@@ -46,7 +46,7 @@ public class UserTest {
     void TestInvalidPasswordNoUpperThrowsInvalidPasswordException(){
         User testUserObject = new User();
         Exception actual = assertThrows(InvalidPasswordException.class, () -> testUserObject.setPassword("pass3$"));
-        String expectedMessage = "Password must contain at least 1 upper!";
+        String expectedMessage = "Password must include at least one uppercase letter.";
         assertEquals(expectedMessage, actual.getMessage());
     }
 
@@ -54,7 +54,7 @@ public class UserTest {
     void TestInvalidPasswordNoLowerThrowsInvalidPasswordException(){
         User testUserObject = new User();
         Exception actual = assertThrows(InvalidPasswordException.class, () -> testUserObject.setPassword("PASS3$"));
-        String expectedMessage = "Password must contain at least 1 lower!";
+        String expectedMessage = "Password must include at least one lowercase letter.";
         assertEquals(expectedMessage, actual.getMessage());
     }
 
@@ -62,7 +62,7 @@ public class UserTest {
     void TestInvalidPasswordNoSymbolThrowsInvalidPasswordException(){
         User testUserObject = new User();
         Exception actual = assertThrows(InvalidPasswordException.class, () -> testUserObject.setPassword("Pass34"));
-        String expectedMessage = "Password must contain at least 1 symbol!";
+        String expectedMessage = "Password must include at least one symbol (@, $, %, &, #).";
         assertEquals(expectedMessage, actual.getMessage());
     }
 
@@ -70,7 +70,7 @@ public class UserTest {
     void TestInvalidPasswordNoNumberThrowsInvalidPasswordException(){
         User testUserObject = new User();
         Exception actual = assertThrows(InvalidPasswordException.class, () -> testUserObject.setPassword("Password$"));
-        String expectedMessage = "Password must contain at least 1 number!";
+        String expectedMessage = "Password must include at least one number.";
         assertEquals(expectedMessage, actual.getMessage());
     }
 
@@ -78,7 +78,7 @@ public class UserTest {
     void TestInvalidPasswordInvalidCharactersThrowsInvalidPasswordException(){
         User testUserObject = new User();
         Exception actual = assertThrows(InvalidPasswordException.class, () -> testUserObject.setPassword("Pass1$£"));
-        String expectedMessage = "Password contains invalid characters!";
+        String expectedMessage = "Password contains invalid characters. Only alphanumeric characters and @, $, %, &, # are allowed.";
         assertEquals(expectedMessage, actual.getMessage());
     }
 
