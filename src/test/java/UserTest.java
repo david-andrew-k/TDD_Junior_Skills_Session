@@ -7,8 +7,8 @@ public class UserTest {
 
     @Test
     void TestToStringReturnsCorrectFormat() {
-        User testUserObject = new User("davidandrew", "12345");
-        String expected = "Username: davidandrew\nPassword: 12345";
+        User testUserObject = new User("davidandrew", "Pass12345$");
+        String expected = "Username: davidandrew\nPassword: Pass12345$";
         String actual = testUserObject.toString();
         assertEquals(expected,actual);
     }
