@@ -13,4 +13,7 @@ Implement validation logic for usernames in the user object. The validation shou
 - [ ] Usernames longer than 20 characters are rejected with an appropriate error message.
 - [ ] Usernames containing non-alphanumeric characters (e.g., `@`, `_`, `!`) are rejected with an appropriate error message.
 
-
+## Error Messages
+- "Username must be at least 3 characters long."
+- "Username must be no more than 20 characters long."
+- "Username can only contain letters and numbers."
