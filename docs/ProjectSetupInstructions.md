@@ -17,3 +17,18 @@ This is an opinionated guide, covering simple setup aimed at someone who is not 
    - Click the "Code" button on the repository page and then select "Download ZIP". Alternatively, you can click [this link.](https://github.com/david-andrew-k/TDD_Junior_Skills_Session/archive/refs/heads/main.zip)
    - If you downloaded a ZIP file, extract it to a folder of your choice.
    ![image](./assets/setup_code_download.png)
+
+3. **Open the project in IntelliJ IDEA**:
+   - Launch IntelliJ IDEA.
+   - Click on "Open" from the welcome screen (or "File" > "Open" if you have another project open).
+   - Navigate to the directory where you downloaded or cloned the project, select the project folder, and click "OK".
+
+4. **Install and Select a Java Development Kit (JDK)**:
+    - In IntelliJ, go to "File" > "Project Structure".
+    - Under "Project Settings" and "Project", select the "SDK" drop down and select "Download JDK".
+    - Download a Java 24 JDK or later (I recommend using Oracle OpenJDK).
+    - Under "Project Settings", select "Project" and set the "Project SDK" to the JDK you just downloaded (if this is not done automatically.).
+
+5. **Test that your project compiles**:
+    - Right click on "src/main/java/org/dwa/Main.java" file and select "Run 'Main.main()'".
+    - You should see "TDD Demo is working as expected!" printed in the Run window at the bottom of the screen.
