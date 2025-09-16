@@ -4,6 +4,8 @@ This document provides step-by-step instructions for setting up the project envi
 
 This is an opinionated guide, covering simple setup aimed at someone who is not familiar with the tools used in this project.
 
+If you prefer a less traditional approach, you can refer to the [Project Setup AI Prompt](./ProjectSetupAIPrompt.md) to generate your own instructions and ask follow-up questions using a Generative AI chatbot of your choice (e.g., ChatGPT, Copilot, etc.).
+
 ## IDE Installation and Setup
 
 1. **Download and Install IntelliJ IDEA Community Edition**:

@@ -6,6 +6,8 @@ The repository includes a `User` class and a set of validation requirements for 
 
 ## Using This Repository
 
+If you need some help setting up the project, please refer to the [Step-by-Step Project Setup Instructions](docs/ProjectSetupInstructions.md) or the [Project Setup AI Prompt](docs/ProjectSetupAIPrompt.md).
+
 The goal of this repository is to practice TDD principles by implementing validation logic for usernames and passwords based on the provided requirements.
 
 Requirements for Username and Password validation are provided in separate markdown files: 
@@ -16,8 +18,7 @@ Tests should be written first (in the `UserTest` class) to cover the validation 
 
 ## Changes
 
-### Change Log
+### Major Change Log
+- [16-09-2025] Added Step-by-Step and AI Prompt Setup Instructions.
 - [11-09-2025] Repository first made public.
 
-### Upcoming Changes
-- Add Project Setup Instructions (IntelliJ)
