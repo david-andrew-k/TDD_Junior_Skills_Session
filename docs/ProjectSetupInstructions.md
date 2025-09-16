@@ -32,8 +32,13 @@ This is an opinionated guide, covering simple setup aimed at someone who is not 
 5. **Test that your project compiles**:
     - Right click on "src/main/java/org/dwa/Main.java" file and select "Run 'Main.main()'".
     - You should see "TDD Demo is working as expected!" printed in the Run window at the bottom of the screen.
+      ![image](./assets/setup_run_main.png)
 
 6. **Run the tests**:
    - Right click on "src/test/java/org/dwa/UserTest.java" file and select "Run 'UserTest'".
    - You should see that there is single test that should pass (green tick) in the Run window at the bottom of the screen.
+     ![image](./assets/setup_run_tests.png)
+
+
+**That's it! You have successfully set up the project environment and can now start working on the project.**
 
