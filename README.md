@@ -6,7 +6,7 @@ The repository includes a `User` class and a set of validation requirements for 
 
 ## Using This Repository
 
-If you need some help setting up the project, please refer to the [Step-by-Step Project Setup Instructions](docs/ProjectSetupInstructions.md) or the [Project Setup AI Prompt](docs/ProjectSetupAIPrompt.md).
+If you need some help setting up the project, please refer to the [Step-by-Step Project Setup Instructions](docs/setup_instructions/ProjectSetupInstructions.md) or the [Project Setup AI Prompt](docs/setup_instructions/ProjectSetupAIPrompt.md).
 
 The goal of this repository is to practice TDD principles by implementing validation logic for usernames and passwords based on the provided requirements.
 

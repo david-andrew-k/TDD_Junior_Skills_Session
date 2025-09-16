@@ -1,7 +1,7 @@
 # Project Setup AI Prompt
 This document provides a prompt to generate step-by-step instructions for setting up a Java project environment using IntelliJ IDEA Community Edition. 
 
-The prompt is designed to be used with a Generative AI chatbot of your choice (e.g., ChatGPT, Copilot, etc.) to create a comprehensive and easy-to-follow guide, with the added benefit of being able to ask follow-up questions if any part of the instructions are unclear. If you prefer a more traditional approach, you can refer to the [Step-by-Step Project Setup Instructions](./ProjectSetupInstructions.md) .
+The prompt is designed to be used with a Generative AI chatbot of your choice (e.g., ChatGPT, Copilot, etc.) to create a comprehensive and easy-to-follow guide, with the added benefit of being able to ask follow-up questions if any part of the instructions are unclear. If you prefer a more traditional approach, you can refer to the [Step-by-Step Project Setup Instructions](ProjectSetupInstructions.md) .
 
 *Please note that the generated instructions may not be perfect, as AI-generated content can sometimes be inconsistent.*
 
