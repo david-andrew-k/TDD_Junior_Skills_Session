@@ -4,7 +4,7 @@ This document provides step-by-step instructions for setting up the project envi
 
 This is an opinionated guide, covering simple setup aimed at someone who is not familiar with the tools used in this project.
 
-## IDE Installation
+## IDE Installation and Setup
 
 1. **Download and Install IntelliJ IDEA Community Edition**:
    - Go to the [IntelliJ download page](https://www.jetbrains.com/idea/download/).
@@ -32,3 +32,8 @@ This is an opinionated guide, covering simple setup aimed at someone who is not 
 5. **Test that your project compiles**:
     - Right click on "src/main/java/org/dwa/Main.java" file and select "Run 'Main.main()'".
     - You should see "TDD Demo is working as expected!" printed in the Run window at the bottom of the screen.
+
+6. **Run the tests**:
+   - Right click on "src/test/java/org/dwa/UserTest.java" file and select "Run 'UserTest'".
+   - You should see that there is single test that should pass (green tick) in the Run window at the bottom of the screen.
+
