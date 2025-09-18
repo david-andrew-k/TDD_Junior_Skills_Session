@@ -10,24 +10,11 @@ If you need some help setting up the project, please refer to the [Step-by-Step 
 
 The goal of this repository is to practice TDD principles by implementing validation logic for usernames and passwords based on the provided requirements.
 
-Requirements for Username and Password validation are provided in separate markdown files: 
+**Requirements for Username and Password validation are provided in separate markdown files:**
 - [Username Requirements](docs/UsernameRequirements.md)
 - [Password Requirements](docs/PasswordRequirements.md)
 
-Tests should be written first (in the `UserTest` class) to cover the validation rules, followed by the implementation of the validation logic in the `User` class.
-
-### TDD Overview
-For those new to TDD, the basic cycle is Red-Green-Refactor:
-
-#### Red
-- **Write a Test**: Start by writing a test for a new feature or functionality.
-- **Run the Test**: Run the test to see it fail (since the feature is not yet implemented).
-#### Green
-- **Write Code**: Write the minimum amount of code necessary to make the test pass.
-- **Run Tests Again**: Run all tests to ensure the new test passes and no other tests are broken.
-#### Refactor
-- **Refactor the Implementation**: Clean up the code while ensuring all tests still pass.
-- **Repeat**: Continue this cycle for each new feature. 
+Tests should be written first (in the `UserTest` class) to cover the validation rules, followed by the implementation of the validation logic in the `User` class. If you are new to TDD, please refer to the [TDD Overview](docs/setup_instructions/TDD_Overview.md) for a brief explanation of the TDD cycle.
 
 ## Branches
 - `main`: The main branch contains everything that you need to try out some Test-Driven Development.
